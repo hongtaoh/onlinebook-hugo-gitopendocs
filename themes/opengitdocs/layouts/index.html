@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<header class="homepage-header">
+    <h1 id="title">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}
+    <h2 class="subtitle">{{.}}</h2>
+    {{ end }}
+</header>
+
+<section id="main" aria-role="main">
+    <article id="content">
+        {{ .Content }}
+        <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+    </article>
+</section>
+{{ end }}

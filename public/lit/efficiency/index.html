@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Medal Efficiency | 120 Years of the Olympics
+    </title>
+    <link rel="canonical" href="https://opengitdocs.com/lit/efficiency/">
+    
+    <link rel="shortcut icon" href="/img/book-open-dark.svg">
+    
+    <meta property="og:title" content="Medal Efficiency" />
+<meta property="og:description" content="The most straightforward way of measuring a country’s efficiency of earning medals is to count the number of medals per athlete participating. This method was used by Pettigrew and Reiche (2016) in their analysis of home-field advantage.
+Some scholars argued that when assessing the efficiency of medal production, we need to take into account the resources that countries possess, such as GDP and population. From an economics perspective, Rathke and Woitek (2007) came up with a sophisticated formula calculating this efficiency, and visualized the results using multiple box plots that were stacked horizontally." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opengitdocs.com/lit/efficiency/" />
+<meta property="og:image" content="https://opengitdocs.com/img/screenshot.png"/>
+<meta property="og:site_name" content="OpenGitDocs for Hugo" />
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.tmp.css" media="screen">
+</head><body>
+<div class="wrapper">
+    <aside>
+<div class="banner">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Olympics.svg/1200px-Olympics.svg.png" alt="Site logo">
+    <a href="https://opengitdocs.com/">
+        <h1>120 Years of the Olympics</h1>
+    </a>
+</div>
+
+
+<nav>
+    <div id="menu-toggle">
+        <span id="menu-label">
+            <input type="checkbox" value="Menu" label="Menu" />
+            <ul>
+    
+    
+    
+    <li class="">
+        <a href="/abstract/">
+            <span>Abstract</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/motivation/">
+            <span>Motivation</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/lit/">
+            <span>Literature Review</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/lit-female/">Female Participation in Summer Olympics</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="active">
+            <a href="/lit/efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/ranking/">Ranking Sports by Number of Athletes</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plans/">
+            <span>Visualization Plans</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/01-plan-female/">Plans: Female Participation</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/02-plan-homefiled/">Plans: Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/03-plan-efficiency/">Plans: Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/04-plan-ranking/">Plans: Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plot/">
+            <span>Plotting</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female/">Female Participation over Time</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female-continent/">Female Participation Across Continents</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/02-plot-homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/03-plot-efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/04-plot-ranking/">Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/conclusion/">
+            <span>Conclusion</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/ref/">
+            <span>References</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+        </span>
+    </div>
+    <ul>
+    
+    
+    
+    <li class="">
+        <a href="/abstract/">
+            <span>Abstract</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/motivation/">
+            <span>Motivation</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/lit/">
+            <span>Literature Review</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/lit-female/">Female Participation in Summer Olympics</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="active">
+            <a href="/lit/efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/ranking/">Ranking Sports by Number of Athletes</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plans/">
+            <span>Visualization Plans</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/01-plan-female/">Plans: Female Participation</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/02-plan-homefiled/">Plans: Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/03-plan-efficiency/">Plans: Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/04-plan-ranking/">Plans: Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plot/">
+            <span>Plotting</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female/">Female Participation over Time</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female-continent/">Female Participation Across Continents</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/02-plot-homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/03-plot-efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/04-plot-ranking/">Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/conclusion/">
+            <span>Conclusion</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/ref/">
+            <span>References</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+</nav>
+
+<hr></aside>
+
+    <main>
+        <div class="page-content" aria-label="Content">
+
+<section id="main" aria-role="main">
+    <h1 id="title">Medal Efficiency</h1>
+    <article id="content">
+        <p>The most straightforward way of measuring a country’s efficiency of earning medals is to count the number of medals per athlete participating. This method was used by Pettigrew and Reiche (2016) in their analysis of home-field advantage.</p>
+<p>Some scholars argued that when assessing the efficiency of medal production, we need to take into account the resources that countries possess, such as GDP and population. From an economics perspective, Rathke and Woitek (2007) came up with a sophisticated formula calculating this efficiency, and visualized the results using multiple box plots that were stacked horizontally. See Figure 6.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/3-2.png"
+         alt="Figure 6: The production of Olympic Medals, 1952-2000, Rathke &amp;amp; Wotiek (2007)"/> <figcaption>
+            <p>Figure 6: The production of Olympic Medals, 1952-2000, Rathke &amp; Wotiek (2007)</p>
+        </figcaption>
+</figure>
+
+<p>Visualizations by Eirk (2016) for the <em>Telegraph</em>, and those by medalspercapita.com also highlighted the importance of  GDP and the size of population. For example, Eirk (2016) ranked Olympic nations based on “Gold per million people” and “Gold per £100 bn GDP”. See Figure 7 and 8.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/3-3.png"
+         alt="Figure 7: Top 10 countries for medals per million population, Eirk (2006)"/> <figcaption>
+            <p>Figure 7: Top 10 countries for medals per million population, Eirk (2006)</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/3-4.png"
+         alt="Figure 8: Ranking medal production considering population and GDP, Eirk (2006)"/> <figcaption>
+            <p>Figure 8: Ranking medal production considering population and GDP, Eirk (2006)</p>
+        </figcaption>
+</figure>
+
+<p>Similarly, using the concept of “medals per capita”, medalspercapita.com ranked countries based on “population per medal”, i.e., how many people are needed to generate a medal. They created a choropleth map based on the results where darker colors indicate lower “medals per capita”. See Table 3 and Figure 9.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/3-5.png"
+         alt="Table 3: Population per medal"/> <figcaption>
+            <p>Table 3: Population per medal</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/3-6.png"
+         alt="Figure 9: World map of population per medal"/> <figcaption>
+            <p>Figure 9: World map of population per medal</p>
+        </figcaption>
+</figure>
+
+<p>However, we think it is problematic to divide medal counts by population or GDP in measuring medal efficiency. First of all, this method is unfair for countries who joined the Olympics late. For example, China (PRC) attended the Olympics for the first time in 1952 and due to political issues, it was not a participant till 1984 (COC, 2004). If the total number of medals is the basis for medal efficiency, it would be unfair for countries like China and many newly founded countries in Africa.</p>
+<p>Second, it might be unfair to divide the number of medals by population. This formula assumes that a country can send as many athletes as it wants, but this is not the case. For example, for Tokyo 2020, each country can send at most three male and three female athletes (International Table Tennis Federation, 2018). As a result, China will send six table tennis athletes, as will Australia, Japan, Brazil, Egypt, Germany, and the United States (Wikipedia, n.d.), even though China’s population size is larger than that of all the six countries combined (World Bank, 2018).</p>
+<p>Third, it might be simplistic to only count the total number of medals. There has been a debate on whether the ranking of Olympic countries should be based on the number of total medals or only golds (Johnson, 2008). We decided to adopt the method by New York Times, i.e., “medal points” (Klein, 2008). In this system, a gold medal is given 4 points, silver 2 and bronze 1. Center for Strategic International Studies (n.d.) used this method and ranked countries based on what they called as “weighted medals”.</p>
+<p>In this interactive, viewers can see a country’s ranking on each category of sport in a specific Olympic Games by clicking the country’s name. This visualization is clear and direct, but it has some drawbacks. First, only the top countries can be shown interactively but there are over 200 participating countries and regions. Second, and because of the first drawback, this visualization did not provide viewers a general idea of the distribution of media efficiency across countries. See Figure 10.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/3-7.png"
+         alt="Figure 10: Ranking of countries by weighted medals"/> <figcaption>
+            <p>Figure 10: Ranking of countries by weighted medals</p>
+        </figcaption>
+</figure>
+
+<p>To solve these problems, we decided to rank countries by “medal points” as well, but on an interactive choropleth world map.</p>
+
+    </article>
+</section>
+<section id="paging">
+    <div>
+        
+        <a class="previous" href="/lit/homefiled/">⟵ Previous: Home-field Advantage</a>
+        
+    </div>
+    <div>
+        
+        <a class="next" href="/lit/ranking/">Next: Ranking Sports by Number of Athletes ⟶</a>
+        
+    </div>
+</section>
+
+<section id="meta">
+    
+</section>
+
+        </div><footer>
+<a href="https://github.com/opengitdocs/hugo">OpenGitDocs on GitHub</a>
+</footer></main>
+    </div>
+</body>
+
+</html>

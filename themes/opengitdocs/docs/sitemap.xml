@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://opengitdocs.com/hugo/use-with-hugo/start/</loc>
+    <lastmod>2020-03-04T22:32:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opengitdocs.com/hugo/use-with-hugo/</loc>
+    <lastmod>2020-03-04T22:32:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opengitdocs.com/hugo/use-with-hugo/configure/</loc>
+    <lastmod>2020-03-04T22:32:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opengitdocs.com/hugo/use-with-hugo/test-and-build/</loc>
+    <lastmod>2020-03-04T22:32:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opengitdocs.com/hugo/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opengitdocs.com/hugo/deploy/</loc>
+    <lastmod>2020-03-04T22:32:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opengitdocs.com/hugo/</loc>
+    <lastmod>2020-03-04T22:32:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opengitdocs.com/hugo/tags/</loc>
+  </url>
+  
+</urlset>

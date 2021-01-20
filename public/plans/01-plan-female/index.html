@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Plans: Female Participation | 120 Years of the Olympics
+    </title>
+    <link rel="canonical" href="https://opengitdocs.com/plans/01-plan-female/">
+    
+    <link rel="shortcut icon" href="/img/book-open-dark.svg">
+    
+    <meta property="og:title" content="Plans: Female Participation" />
+<meta property="og:description" content="As discussed above, we will use a line graph, stacked bar chart, and area chart to show the overall trend of female participation in the Summer Olympics. For female participation in each individual continent, we will use KDE in a small multiple.
+In a line graph, the x-axis will be time and the y-axis the percentage against the total number of participants. We will show both female and male athletes. See Figure 12." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opengitdocs.com/plans/01-plan-female/" />
+<meta property="og:image" content="https://opengitdocs.com/img/screenshot.png"/>
+<meta property="og:site_name" content="OpenGitDocs for Hugo" />
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.tmp.css" media="screen">
+</head><body>
+<div class="wrapper">
+    <aside>
+<div class="banner">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Olympics.svg/1200px-Olympics.svg.png" alt="Site logo">
+    <a href="https://opengitdocs.com/">
+        <h1>120 Years of the Olympics</h1>
+    </a>
+</div>
+
+
+<nav>
+    <div id="menu-toggle">
+        <span id="menu-label">
+            <input type="checkbox" value="Menu" label="Menu" />
+            <ul>
+    
+    
+    
+    <li class="">
+        <a href="/abstract/">
+            <span>Abstract</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/motivation/">
+            <span>Motivation</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/lit/">
+            <span>Literature Review</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/lit-female/">Female Participation in Summer Olympics</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/ranking/">Ranking Sports by Number of Athletes</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plans/">
+            <span>Visualization Plans</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="active">
+            <a href="/plans/01-plan-female/">Plans: Female Participation</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/02-plan-homefiled/">Plans: Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/03-plan-efficiency/">Plans: Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/04-plan-ranking/">Plans: Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plot/">
+            <span>Plotting</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female/">Female Participation over Time</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female-continent/">Female Participation Across Continents</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/02-plot-homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/03-plot-efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/04-plot-ranking/">Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/conclusion/">
+            <span>Conclusion</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/ref/">
+            <span>References</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+        </span>
+    </div>
+    <ul>
+    
+    
+    
+    <li class="">
+        <a href="/abstract/">
+            <span>Abstract</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/motivation/">
+            <span>Motivation</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/lit/">
+            <span>Literature Review</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/lit-female/">Female Participation in Summer Olympics</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/ranking/">Ranking Sports by Number of Athletes</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plans/">
+            <span>Visualization Plans</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="active">
+            <a href="/plans/01-plan-female/">Plans: Female Participation</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/02-plan-homefiled/">Plans: Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/03-plan-efficiency/">Plans: Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/04-plan-ranking/">Plans: Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plot/">
+            <span>Plotting</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female/">Female Participation over Time</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female-continent/">Female Participation Across Continents</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/02-plot-homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/03-plot-efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/04-plot-ranking/">Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/conclusion/">
+            <span>Conclusion</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/ref/">
+            <span>References</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+</nav>
+
+<hr></aside>
+
+    <main>
+        <div class="page-content" aria-label="Content">
+
+<section id="main" aria-role="main">
+    <h1 id="title">Plans: Female Participation</h1>
+    <article id="content">
+        <p>As discussed above, we will use a line graph, stacked bar chart, and area chart to show the overall trend of female participation in the Summer Olympics. For female participation in each individual continent, we will use KDE in a small multiple.</p>
+<p>In a line graph, the x-axis will be time and the y-axis the percentage against the total number of participants. We will show both female and male athletes. See Figure 12.</p>
+<p>For stacked bar charts, the x-axis will be time and y-axis percentage against the total number of athletes. Two segments in each bar will represent male and female respectively, and the two will sum up to 100% for every year presented. This will make the comparison between male and female participation very clear. See Figure 13.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/1.png"
+         alt="Figure 12: Line graph for female participation" width="500"/> <figcaption>
+            <p>Figure 12: Line graph for female participation</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/2.png"
+         alt="Figure 13: Stacked bar chart for female participation" width="500"/> <figcaption>
+            <p>Figure 13: Stacked bar chart for female participation</p>
+        </figcaption>
+</figure>
+
+<p>In order to also show the changes in the total number of athletes, beside the changes in percentages, we will use a stacked area chart. The x-axis will be again time, and the y-axis will be the total number of athletes for each Olympic Games. See Figure 14.</p>
+<p>For female participation in each individual continent over the years, we will line graphs in a small multiple. The x-axis will be time and the y-axis will be the percentage of female athletes against the total number of athletes. To make comparisons between continents and with the global average clearer, for each plot in the small multiple, we will put the line graph of other continents in the background, and we will also plot the global average as the benchmark. See Figure 15.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/3.png"
+         alt="Figure 14: Staked area chart for female participation" width="500"/> <figcaption>
+            <p>Figure 14: Staked area chart for female participation</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/4.png"
+         alt="Figure 15: Line graph in small multiple for female participation" width="500"/> <figcaption>
+            <p>Figure 15: Line graph in small multiple for female participation</p>
+        </figcaption>
+</figure>
+
+
+    </article>
+</section>
+<section id="paging">
+    <div>
+        
+    </div>
+    <div>
+        
+        <a class="next" href="/plans/02-plan-homefiled/">Next: Plans: Home-field Advantage ⟶</a>
+        
+    </div>
+</section>
+
+<section id="meta">
+    
+</section>
+
+        </div><footer>
+<a href="https://github.com/opengitdocs/hugo">OpenGitDocs on GitHub</a>
+</footer></main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+html {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a,
+a:visited {
+  color: $link-color;
+  transition: .5s ease
+}
+
+a:hover {
+  color: $text-color;
+  text-decoration: none
+}
+
+a:active {
+  color: $accent-background
+}
+
+.active {
+  font-weight: 800;
+
+  a {
+    color: $text-color;
+  }
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-size: $font-size;
+  font-family: $font-family;
+  line-height: $line-height;
+  text-rendering: optimizeLegibility;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100%;
+
+  @media screen and (min-width: $large-phone) {
+    flex-direction: row;
+  }
+
+}
+
+button {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background: $accent-background
+}
+
+button:hover {
+  box-shadow: 5px 5px $text-color
+}
+
+code {
+  background-color: $code-background-color;
+}
+
+header {
+  padding: 0 0 1rem 0;
+
+  h1,
+  h2 {
+    margin: 0 0 0.6em 0;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+main {
+  padding: calc(#{$banner-height}/3) $padding;
+  width: 100%;
+  max-width: 62rem;
+
+  @media screen and (min-width: $large-phone) {
+    padding: $banner-height calc(#{$banner-height}/2);
+    margin: 0 auto;
+  }
+}
+
+#title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+#date {
+  font-size: 0.9rem;
+}
+
+#paging {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+
+  div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  div:nth-child(even) {
+    justify-content: flex-end;
+  }
+}
+
+#section-list {
+  margin: 1em 0;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+footer, #meta {
+  font-size: 0.9rem;
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

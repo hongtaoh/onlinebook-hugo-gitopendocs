@@ -1,0 +1,20 @@
+<!-- logo banner-->
+<div class="banner">
+    <img class="logo-img" src="{{ if .Site.Params.logo | default "/img/book-open.svg" }}{{ .Site.Params.logo | relURL }}{{ end }}" alt="Site logo">
+    <a href="{{ .Site.BaseURL }}">
+        <h1>{{ .Site.Title }}</h1>
+    </a>
+</div>
+
+<!-- menu begins-->
+<nav>
+    <div id="menu-toggle">
+        <span id="menu-label">
+            <input type="checkbox" value="Menu" label="Menu" />
+            {{ partial "menu.html" . }}
+        </span>
+    </div>
+    {{ partial "menu.html" . }}
+</nav>
+<!-- menu ends -->
+<hr>

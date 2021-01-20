@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Configure Hugo | OpenGitDocs for Hugo
+    </title>
+    <link rel="canonical" href="https://opengitdocs.com/hugo/use-with-hugo/configure/">
+    
+    <link rel="shortcut icon" href="/hugo/img/book-open-dark.svg">
+    
+    <meta property="og:title" content="Configure Hugo" />
+<meta property="og:description" content="Hugo expects a configuration file to build your site. OpenGitDocs includes one already set up; simply move it from the theme repository into your site root:
+mv themes/opengitdocs/exampleSite/config.yaml . Be careful not to overwrite an existing file named config.yaml, if that is not your intention.
+Here&rsquo;s the full config.yaml used to build this site (yes, the one you&rsquo;re reading right now!):
+baseURL: https://opengitdocs.com/hugo/ languageCode: en-us title: OpenGitDocs for Hugo theme: # Name of your theme, hopefully, opengitdocs enableGitInfo: true # Show last modified date on pages sectionPagesMenu: main params: description: An open source static site solution for documentation websites." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opengitdocs.com/hugo/use-with-hugo/configure/" />
+<meta property="og:image" content="https://opengitdocs.com/img/screenshot.png"/>
+<meta property="article:modified_time" content="2020-03-04T22:32:03-05:00" /><meta property="og:site_name" content="OpenGitDocs for Hugo" />
+
+    
+    
+    
+    <link rel="stylesheet" href="/hugo/css/main.tmp.css" media="screen">
+</head><body>
+<div class="wrapper">
+    <aside>
+<div class="banner">
+    <img class="logo-img" src="/hugo/img/book-open.svg" alt="Site logo">
+    <a href="https://opengitdocs.com/hugo/">
+        <h1>OpenGitDocs for Hugo</h1>
+    </a>
+</div>
+
+
+<nav>
+    <div id="menu-toggle">
+        <span id="menu-label">
+            <input type="checkbox" value="Menu" label="Menu" />
+            <ul>
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/hugo/use-with-hugo/">
+            <span>Use with Hugo</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/hugo/use-with-hugo/start/">Get Started with Hugo</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="active">
+            <a href="/hugo/use-with-hugo/configure/">Configure Hugo</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/hugo/use-with-hugo/test-and-build/">Test and Build</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/hugo/deploy/">
+            <span>Deploy and Update</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+</ul>
+        </span>
+    </div>
+    <ul>
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/hugo/use-with-hugo/">
+            <span>Use with Hugo</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/hugo/use-with-hugo/start/">Get Started with Hugo</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="active">
+            <a href="/hugo/use-with-hugo/configure/">Configure Hugo</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/hugo/use-with-hugo/test-and-build/">Test and Build</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/hugo/deploy/">
+            <span>Deploy and Update</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+</ul>
+</nav>
+
+<hr></aside>
+
+    <main>
+        <div class="page-content" aria-label="Content">
+
+<section id="main" aria-role="main">
+    <h1 id="title">Configure Hugo</h1>
+    <article id="content">
+        <p>Hugo expects a configuration file to build your site. OpenGitDocs includes one already set up; simply move it from the theme repository into your site root:</p>
+<div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mv themes/opengitdocs/exampleSite/config.yaml .
+</code></pre></div><p>Be careful not to overwrite an existing file named <code>config.yaml</code>, if that is not your intention.</p>
+<p>Here&rsquo;s the full <code>config.yaml</code> used to build this site (yes, the one you&rsquo;re reading right now!):</p>
+<div class="highlight"><pre style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">baseURL: https://opengitdocs.com/hugo/
+languageCode: en-us
+title: OpenGitDocs for Hugo
+theme: # Name of your theme, hopefully, opengitdocs
+enableGitInfo: true # Show last modified date on pages
+sectionPagesMenu: main
+
+params:
+  description: An open source static site solution for documentation websites.
+  images:
+  - /img/screenshot.png # Used in site metadata
+  title: OpenGitDocs for Hugo
+  logo: /img/book-open.svg # Path from root to your logo, best served 1:1 ratio
+  ico: /img/book-open-dark.svg # Path to favicon
+  colorTheme: "light" # "light" or "dark"
+  mainColor: "" # Hex color for the sidebar, i.e. "#016087"
+  sideBarExpanded: true # Show all subsections in sidebar on desktop screens
+  footerText: "[OpenGitDocs on GitHub](https://github.com/opengitdocs/hugo)" # Shown at the bottom of pages
+
+markup: # See https://gohugo.io/getting-started/configuration-markup for more
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: false
+    noClasses: true
+    style: solarized-light
+    tabWidth: 4
+
+</code></pre></div><p>OpenGitDocs uses reasonable defaults for unset parameters where possible.</p>
+<p>Hugo makes no assumptions, so if a necessary parameter is missing, you&rsquo;ll see a warning when building or serving your site. Here are <a href="https://gohugo.io/getting-started/configuration/#all-configuration-settings">all configuration settings for Hugo configuration files</a>.</p>
+<p>Congratulations, you&rsquo;re ready to preview and build your site!</p>
+
+    </article>
+</section>
+<section id="paging">
+    <div>
+        
+        <a class="previous" href="/hugo/use-with-hugo/start/">⟵ Previous: Get Started with Hugo</a>
+        
+    </div>
+    <div>
+        
+        <a class="next" href="/hugo/use-with-hugo/test-and-build/">Next: Test and Build ⟶</a>
+        
+    </div>
+</section>
+
+<section id="meta">
+    
+    <p id="date">Last updated: Wed Mar 4, 2020</p>
+</section>
+
+        </div><footer>
+<a href="https://github.com/opengitdocs/hugo">OpenGitDocs on GitHub</a>
+</footer></main>
+    </div>
+</body>
+
+</html>

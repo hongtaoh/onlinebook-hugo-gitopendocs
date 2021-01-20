@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<header class="homepage-header">
+    <h1 id="title">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}
+    <h2 class="subtitle">{{.}}</h2>
+    {{ end }}
+</header>
+
+<section id="main" aria-role="main">
+    <article id="content">
+        <p>Oops! That doesn't seem to exist.</p>
+    </article>
+</section>
+{{ end }}

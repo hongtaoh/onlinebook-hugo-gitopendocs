@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Literature Review on 120 Years of the Olympics</title>
+    <link>https://opengitdocs.com/lit/</link>
+    <description>Recent content in Literature Review on 120 Years of the Olympics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://opengitdocs.com/lit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Female Participation in Summer Olympics</title>
+      <link>https://opengitdocs.com/lit/lit-female/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/lit/lit-female/</guid>
+      <description>Many attempts have already been made to visualize female participation in the Olympics. The most basic one (Bmallion, 2015) is using tables to display the information about countries with the highest and lowest percentages of female athletes, and to show female percentages across the 120 years of the Olympics. See Table 1.
+  Table 1(a): Countries with the highest rate of female participation
+    Table 1(b): Female percentage in Olympic events</description>
+    </item>
+    
+    <item>
+      <title>Home-field Advantage</title>
+      <link>https://opengitdocs.com/lit/homefiled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/lit/homefiled/</guid>
+      <description>Similar to the attempt at showing female participation, simple and basic tables were utilized to examine the existence of home-field advantage at the Olympics (Pettigrew &amp;amp; Reiche, 2016). See Figure 4.
+  Figure 4: Medals won by host countries at host year and the previous Olympics, Pettigrew &amp;amp; Reiche (2016)
+  This visualization shows a table comparing the total number of medals earned at the host year and the previous Olympics.</description>
+    </item>
+    
+    <item>
+      <title>Medal Efficiency</title>
+      <link>https://opengitdocs.com/lit/efficiency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/lit/efficiency/</guid>
+      <description>The most straightforward way of measuring a country’s efficiency of earning medals is to count the number of medals per athlete participating. This method was used by Pettigrew and Reiche (2016) in their analysis of home-field advantage.
+Some scholars argued that when assessing the efficiency of medal production, we need to take into account the resources that countries possess, such as GDP and population. From an economics perspective, Rathke and Woitek (2007) came up with a sophisticated formula calculating this efficiency, and visualized the results using multiple box plots that were stacked horizontally.</description>
+    </item>
+    
+    <item>
+      <title>Ranking Sports by Number of Athletes</title>
+      <link>https://opengitdocs.com/lit/ranking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/lit/ranking/</guid>
+      <description>Dutta (2018) in his Kaggle post visualized the top 10 sports that USA excel by putting 10 boxes vertically with sports winning the most gold medals on top. See Figure 11.
+  Figure 11: Ranking of sports by weighted medals
+  This visualization is transparent and clear but the problem is that it is limited to only about 10 items, which is not enough for us to visualize all the sports in the Summer Olympics.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,107 @@
+#content {
+  max-width: 100%;
+
+  div {
+    width: 100%;
+    height: 100%;
+  }
+
+  p {
+    margin: 1em 0;
+    opacity: 0.8
+  }
+
+  .highlight {
+    width: 100%
+  }
+
+  pre {
+    border-radius: 3px;
+    padding: $padding;
+    overflow-x: auto;
+    background-color: #000004;
+    width: 100%;
+    margin-bottom: 1em
+  }
+
+  pre>code {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9em;
+    padding: 1px 3px;
+    border-radius: 3px;
+    border: 1px solid $code-background-color
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 2rem auto;
+    opacity: 1
+  }
+
+  blockquote {
+    background-color: $code-background-color;
+    color: #39424E;
+    padding: 2rem;
+    margin: 2rem 1rem 2rem 1rem;
+    border-radius: 3px
+  }
+
+  blockquote a {
+    color: #111
+  }
+
+  blockquote ul {
+    margin-top: 1rem
+  }
+
+  blockquote li {
+    list-style: disc
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    overflow-x: auto
+  }
+
+  table td,
+  table th {
+    padding: 2px 5px;
+    border: 1px solid $code-background-color
+  }
+
+  ul {
+    list-style: disc outside;
+
+    @media screen and (min-width: $large-phone) {
+      margin: 2rem
+    }
+  }
+
+  li>ul, li>ol {
+      margin: 0 0 0 1em;
+  }
+
+  ol {
+    list-style: decimal outside;
+    margin: 2rem
+  }
+
+  .gist {
+    width: 100%
+  }
+
+  .gist td,
+  .gist th {
+    text-align: left;
+    border: 0
+  }
+}

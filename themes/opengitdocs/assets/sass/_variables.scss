@@ -1,0 +1,25 @@
+/* Breakpoints */
+$small-phone: 640px;
+$large-phone: 812px;
+$ipad: 1024px;
+$desktop: 1240px;
+$widescreen: 2500px;
+
+/* General Spacing */
+$padding: 10px;
+$line-height: 1.6rem;
+$banner-height: 6rem;
+
+/* Styling */
+$accent-background: linear-gradient(-242deg, $accent-color, $border-color);
+$border-radius: $padding;
+$logo-size: $banner-height;
+$drop-shadow: 6px 22px 42px -7px $drop-shadow-color;
+
+/* Font Styling */
+$banner-title-size: 1.85rem;
+$banner-title-weight: 500;
+$font-size: 18px;
+$font-family: Arial,
+x-locale-body,
+sans-serif;

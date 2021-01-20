@@ -1,0 +1,30 @@
+baseURL: https://opengitdocs.com/
+languageCode: en-us
+title: 120 Years of the Olympics
+theme: opengitdocs
+enableGitInfo: # true # Show last modified date on pages
+sectionPagesMenu: main
+
+params:
+  description: An open source static site solution for documentation websites.
+  images:
+  - /img/screenshot.png # Used in site metadata
+  title: OpenGitDocs for Hugo
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Olympics.svg/1200px-Olympics.svg.png
+  ico: /img/book-open-dark.svg # Path to favicon
+  colorTheme: "light" # "light" or "dark"
+  mainColor: "" # Hex color for the sidebar, i.e. "#016087"
+  sideBarExpanded: true # Show all subsections in sidebar on desktop screens
+  footerText: "[OpenGitDocs on GitHub](https://github.com/opengitdocs/hugo)" # Shown at the bottom of pages
+
+markup: # See https://gohugo.io/getting-started/configuration-markup for more
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: false
+    noClasses: true
+    style: solarized-light
+    tabWidth: 4

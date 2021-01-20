@@ -1,0 +1,13 @@
+{{ $theme := .Site.Params.colorTheme | default "light" }}
+{{ $color := .Site.Params.mainColor | default "#016087" }}
+@charset 'utf-8';
+
+$sidebar-background: {{ $color }};
+
+@import "_{{ $theme }}-colors";
+@import "_variables";
+@import "_base";
+@import "_grid";
+@import "_sidebar";
+@import "_nav";
+@import "_markdown";

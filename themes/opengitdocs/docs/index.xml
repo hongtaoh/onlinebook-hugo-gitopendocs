@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenGitDocs on OpenGitDocs for Hugo</title>
+    <link>https://opengitdocs.com/hugo/</link>
+    <description>Recent content in OpenGitDocs on OpenGitDocs for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://opengitdocs.com/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Get Started with Hugo</title>
+      <link>https://opengitdocs.com/hugo/use-with-hugo/start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/hugo/use-with-hugo/start/</guid>
+      <description>Build your OpenGitDocs site with Hugo static site generator.
+1. Prepare Your Documentation Ensure your documentation is in the right format for use with Hugo static site generator. See Getting Started if you&amp;rsquo;re new to Hugo.
+Here&amp;rsquo;s an example of what your content directory organization might look like:
+content/ ├── _index.md ├── intro/ │ ├── config.md │ ├── deploy.md │ ├── _index.md │ ├── quickstart.md │ └── screenshot.png ├── support.md └── usage/ ├── customizing.</description>
+    </item>
+    
+    <item>
+      <title>Configure Hugo</title>
+      <link>https://opengitdocs.com/hugo/use-with-hugo/configure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/hugo/use-with-hugo/configure/</guid>
+      <description>Hugo expects a configuration file to build your site. OpenGitDocs includes one already set up; simply move it from the theme repository into your site root:
+mv themes/opengitdocs/exampleSite/config.yaml . Be careful not to overwrite an existing file named config.yaml, if that is not your intention.
+Here&amp;rsquo;s the full config.yaml used to build this site (yes, the one you&amp;rsquo;re reading right now!):
+baseURL: https://opengitdocs.com/hugo/ languageCode: en-us title: OpenGitDocs for Hugo theme: # Name of your theme, hopefully, opengitdocs enableGitInfo: true # Show last modified date on pages sectionPagesMenu: main params: description: An open source static site solution for documentation websites.</description>
+    </item>
+    
+    <item>
+      <title>Test and Build</title>
+      <link>https://opengitdocs.com/hugo/use-with-hugo/test-and-build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/hugo/use-with-hugo/test-and-build/</guid>
+      <description>Serve your new documentation site locally to see how it looks. Run:
+hugo serve And visit http://localhost:1313/ in your browser to preview the site.
+If everything seems lovely, you can build your site. Hugo will build to the public/ directory by default. To customize this, pass the -d flag and specify the destination directory.
+For example, to build your site into your docs/ directory:
+hugo -d docs/ Commit and push the changes back to your site repository.</description>
+    </item>
+    
+    <item>
+      <title>Deploy and Update</title>
+      <link>https://opengitdocs.com/hugo/deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/hugo/deploy/</guid>
+      <description>OpenGitDocs builds a static site that you can host anywhere, including GitHub Pages, GitLab Pages, or Bitbucket Cloud.
+You can even take advantage of continuous integration using GitHub Actions or GitLab CI/CD!
+Visit the main site for full instructions on hosting your OpenGitDocs site in your repository.</description>
+    </item>
+    
+  </channel>
+</rss>

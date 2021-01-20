@@ -1,0 +1,40 @@
+aside {
+  background-color: $sidebar-background;
+  transition: transform 5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+  @media screen and (min-width: $large-phone) {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: $drop-shadow;
+  }
+
+  hr {
+    background-color: $accent-color;
+    border: none;
+    height: 3px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.banner {
+  display: flex;
+  min-height: $banner-height;
+  justify-content: start;
+  align-items: center;
+
+  a,
+  h1 {
+    color: $banner-title;
+    font-size: $banner-title-size;
+    font-weight: $banner-title-weight;
+    text-decoration: none;
+  }
+
+  .logo-img {
+    width: 100%;
+    max-width: $logo-size;
+    padding: $padding;
+  }
+}

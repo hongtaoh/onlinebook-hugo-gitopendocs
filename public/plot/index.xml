@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plotting on 120 Years of the Olympics</title>
+    <link>https://opengitdocs.com/plot/</link>
+    <description>Recent content in Plotting on 120 Years of the Olympics</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://opengitdocs.com/plot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Female Participation over Time</title>
+      <link>https://opengitdocs.com/plot/01-plot-female/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/plot/01-plot-female/</guid>
+      <description>As planned above, we started with a simple line graph displaying both male and female athletes’ percentage against all athletes. The strength of this method is that it is simple and clear. It shows that the female percentage has been steadily growing in the past century at the Olympics. The drawback is that it does not generate a stark contrast between male and female as a stacked bar chart can do.</description>
+    </item>
+    
+    <item>
+      <title>Female Participation Across Continents</title>
+      <link>https://opengitdocs.com/plot/01-plot-female-continent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/plot/01-plot-female-continent/</guid>
+      <description>To visualize changes in female participation in each continent, we first used a simple line graph where we put all the continent together. The x-axis is time, and the y-axis is female participation. The legend shows the colors associated with the continents. See Figure 25.
+  Figure 25: Line graph for female participation by continent
+  The graph was very messy. As there were six continents and one global average, we could not distinguish between the seven categories very easily.</description>
+    </item>
+    
+    <item>
+      <title>Home-field Advantage</title>
+      <link>https://opengitdocs.com/plot/02-plot-homefiled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/plot/02-plot-homefiled/</guid>
+      <description>As discussed above, we first tried scatter plot with jitter. The x-axis is the countries that have ever hosted the Olympics and the y-axis denotes the percentage of medals earned by a country against the total number of medals in that year. Blue dots represent data when the country was not the host and the orange ones for when it was the host. See Figure 30.
+ Figure30: Scatter plot with jittering for home-field advantage</description>
+    </item>
+    
+    <item>
+      <title>Medal Efficiency</title>
+      <link>https://opengitdocs.com/plot/03-plot-efficiency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/plot/03-plot-efficiency/</guid>
+      <description>As planned, first of all, we did data manipulation before plotting. Golds were given 4 points, Silver 2, and Bronze 1. Attendance without any medals was assigned to 0 point. A country’s “medal efficiency” was calculated as the quotient of total medal points and the total number of athletes participating over 120 years. Therefore, if a country / region has a medal efficiency of 0.5, it means that on average, each athlete of that country / region earned half a Bronze.</description>
+    </item>
+    
+    <item>
+      <title>Ranking Sports</title>
+      <link>https://opengitdocs.com/plot/04-plot-ranking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opengitdocs.com/plot/04-plot-ranking/</guid>
+      <description>To rank sports according to the number of athletes, we first plotted a bar chart, each bar representing a category. As can be seen below, since there were too many categories, the names of sports overlapped to a degree that most of them were indistinguishable. Since there are around thirty sports, using colors is not an ideal option.
+We then thought about the word cloud. In word clouds, the size of words is associated with the frequencies.</description>
+    </item>
+    
+  </channel>
+</rss>

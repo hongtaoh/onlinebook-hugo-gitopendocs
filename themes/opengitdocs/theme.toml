@@ -1,0 +1,12 @@
+name = "OpenGitDocs for Hugo"
+license = "Apache-2.0"
+licenselink = "https://github.com/opengitdocs/hugo/blob/master/LICENSE"
+description = "A sensible documentation site theme with straightforward set up and reasonable defaults."
+homepage = "https://opengitdocs.com/hugo"
+tags = ["docs","documentation","modern","light","dark","responsive","minimal"]
+features = ["docs","documentation","modern","light","dark","responsive","minimal"]
+min_version = "0.60"
+
+[author]
+  name = "Victoria Drake"
+  homepage = "https://victoria.dev"

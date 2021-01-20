@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home-field Advantage | 120 Years of the Olympics
+    </title>
+    <link rel="canonical" href="https://opengitdocs.com/plot/02-plot-homefiled/">
+    
+    <link rel="shortcut icon" href="/img/book-open-dark.svg">
+    
+    <meta property="og:title" content="Home-field Advantage" />
+<meta property="og:description" content="As discussed above, we first tried scatter plot with jitter. The x-axis is the countries that have ever hosted the Olympics and the y-axis denotes the percentage of medals earned by a country against the total number of medals in that year. Blue dots represent data when the country was not the host and the orange ones for when it was the host. See Figure 30.
+ Figure30: Scatter plot with jittering for home-field advantage" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opengitdocs.com/plot/02-plot-homefiled/" />
+<meta property="og:image" content="https://opengitdocs.com/img/screenshot.png"/>
+<meta property="og:site_name" content="OpenGitDocs for Hugo" />
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.tmp.css" media="screen">
+</head><body>
+<div class="wrapper">
+    <aside>
+<div class="banner">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Olympics.svg/1200px-Olympics.svg.png" alt="Site logo">
+    <a href="https://opengitdocs.com/">
+        <h1>120 Years of the Olympics</h1>
+    </a>
+</div>
+
+
+<nav>
+    <div id="menu-toggle">
+        <span id="menu-label">
+            <input type="checkbox" value="Menu" label="Menu" />
+            <ul>
+    
+    
+    
+    <li class="">
+        <a href="/abstract/">
+            <span>Abstract</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/motivation/">
+            <span>Motivation</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/lit/">
+            <span>Literature Review</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/lit-female/">Female Participation in Summer Olympics</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/ranking/">Ranking Sports by Number of Athletes</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plans/">
+            <span>Visualization Plans</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/01-plan-female/">Plans: Female Participation</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/02-plan-homefiled/">Plans: Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/03-plan-efficiency/">Plans: Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/04-plan-ranking/">Plans: Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plot/">
+            <span>Plotting</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female/">Female Participation over Time</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female-continent/">Female Participation Across Continents</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="active">
+            <a href="/plot/02-plot-homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/03-plot-efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/04-plot-ranking/">Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/conclusion/">
+            <span>Conclusion</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/ref/">
+            <span>References</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+        </span>
+    </div>
+    <ul>
+    
+    
+    
+    <li class="">
+        <a href="/abstract/">
+            <span>Abstract</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/motivation/">
+            <span>Motivation</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/lit/">
+            <span>Literature Review</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/lit-female/">Female Participation in Summer Olympics</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/ranking/">Ranking Sports by Number of Athletes</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plans/">
+            <span>Visualization Plans</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/01-plan-female/">Plans: Female Participation</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/02-plan-homefiled/">Plans: Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/03-plan-efficiency/">Plans: Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/04-plan-ranking/">Plans: Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plot/">
+            <span>Plotting</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female/">Female Participation over Time</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female-continent/">Female Participation Across Continents</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="active">
+            <a href="/plot/02-plot-homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/03-plot-efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/04-plot-ranking/">Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/conclusion/">
+            <span>Conclusion</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/ref/">
+            <span>References</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+</nav>
+
+<hr></aside>
+
+    <main>
+        <div class="page-content" aria-label="Content">
+
+<section id="main" aria-role="main">
+    <h1 id="title">Home-field Advantage</h1>
+    <article id="content">
+        <p>As discussed above, we first tried scatter plot with jitter. The x-axis is the countries that have ever hosted the Olympics and the y-axis denotes the percentage of medals earned by a country against the total number of medals in that year. Blue dots represent data when the country was not the host and the orange ones for when it was the host. See Figure 30.</p>
+<figure class="wide">
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis-data/master/output/vis/g-2-7.png"
+         alt="Figure30: Scatter plot with jittering for home-field advantage"/> <figcaption>
+            <p>Figure30: Scatter plot with jittering for home-field advantage</p>
+        </figcaption>
+</figure>
+
+<p>The blue dots were too packed. We later tried beeswarm plot coupled with box plot. Dots were shown much more clearly but one drawback is that we could not see the density distribution of all the dots very well. Density distribution was important in this case because it would allow an easier comparison between the medal percentage when a country was a host and that when it was not. See Figure 31.</p>
+<figure class="wide">
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis-data/master/output/vis/g-2-8.png"
+         alt="Figure 31: Beeswarm plot for home-field advantage"/> <figcaption>
+            <p>Figure 31: Beeswarm plot for home-field advantage</p>
+        </figcaption>
+</figure>
+
+<p>To show density distribution of medal percentages, we used kernel density estimation in a small multiple. The x-axis is the medal percentage and the y-axis is the probability density. We used a red arrow to denote when the country was an Olympics host. An arrow located at the tail would indicate the existence of home-field advantage. See Figure 32.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/g-2-9.png"
+         alt="Figure 32: KDE in small multiple for home-field advantage"/> <figcaption>
+            <p>Figure 32: KDE in small multiple for home-field advantage</p>
+        </figcaption>
+</figure>
+
+
+    </article>
+</section>
+<section id="paging">
+    <div>
+        
+        <a class="previous" href="/plot/01-plot-female-continent/">⟵ Previous: Female Participation Across Continents</a>
+        
+    </div>
+    <div>
+        
+        <a class="next" href="/plot/03-plot-efficiency/">Next: Medal Efficiency ⟶</a>
+        
+    </div>
+</section>
+
+<section id="meta">
+    
+</section>
+
+        </div><footer>
+<a href="https://github.com/opengitdocs/hugo">OpenGitDocs on GitHub</a>
+</footer></main>
+    </div>
+</body>
+
+</html>

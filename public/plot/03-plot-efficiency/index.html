@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Medal Efficiency | 120 Years of the Olympics
+    </title>
+    <link rel="canonical" href="https://opengitdocs.com/plot/03-plot-efficiency/">
+    
+    <link rel="shortcut icon" href="/img/book-open-dark.svg">
+    
+    <meta property="og:title" content="Medal Efficiency" />
+<meta property="og:description" content="As planned, first of all, we did data manipulation before plotting. Golds were given 4 points, Silver 2, and Bronze 1. Attendance without any medals was assigned to 0 point. A country’s “medal efficiency” was calculated as the quotient of total medal points and the total number of athletes participating over 120 years. Therefore, if a country / region has a medal efficiency of 0.5, it means that on average, each athlete of that country / region earned half a Bronze." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opengitdocs.com/plot/03-plot-efficiency/" />
+<meta property="og:image" content="https://opengitdocs.com/img/screenshot.png"/>
+<meta property="og:site_name" content="OpenGitDocs for Hugo" />
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.tmp.css" media="screen">
+</head><body>
+<div class="wrapper">
+    <aside>
+<div class="banner">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Olympics.svg/1200px-Olympics.svg.png" alt="Site logo">
+    <a href="https://opengitdocs.com/">
+        <h1>120 Years of the Olympics</h1>
+    </a>
+</div>
+
+
+<nav>
+    <div id="menu-toggle">
+        <span id="menu-label">
+            <input type="checkbox" value="Menu" label="Menu" />
+            <ul>
+    
+    
+    
+    <li class="">
+        <a href="/abstract/">
+            <span>Abstract</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/motivation/">
+            <span>Motivation</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/lit/">
+            <span>Literature Review</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/lit-female/">Female Participation in Summer Olympics</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/ranking/">Ranking Sports by Number of Athletes</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plans/">
+            <span>Visualization Plans</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/01-plan-female/">Plans: Female Participation</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/02-plan-homefiled/">Plans: Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/03-plan-efficiency/">Plans: Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/04-plan-ranking/">Plans: Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plot/">
+            <span>Plotting</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female/">Female Participation over Time</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female-continent/">Female Participation Across Continents</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/02-plot-homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="active">
+            <a href="/plot/03-plot-efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/04-plot-ranking/">Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/conclusion/">
+            <span>Conclusion</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/ref/">
+            <span>References</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+        </span>
+    </div>
+    <ul>
+    
+    
+    
+    <li class="">
+        <a href="/abstract/">
+            <span>Abstract</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/motivation/">
+            <span>Motivation</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/lit/">
+            <span>Literature Review</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/lit-female/">Female Participation in Summer Olympics</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/lit/ranking/">Ranking Sports by Number of Athletes</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plans/">
+            <span>Visualization Plans</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/01-plan-female/">Plans: Female Participation</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/02-plan-homefiled/">Plans: Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/03-plan-efficiency/">Plans: Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plans/04-plan-ranking/">Plans: Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/plot/">
+            <span>Plotting</span>
+        </a>
+    </li>
+    
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female/">Female Participation over Time</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/01-plot-female-continent/">Female Participation Across Continents</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/02-plot-homefiled/">Home-field Advantage</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="active">
+            <a href="/plot/03-plot-efficiency/">Medal Efficiency</a>
+        </li>
+    </ul>
+    
+    <ul class="sub-menu">
+        <li class="">
+            <a href="/plot/04-plot-ranking/">Ranking Sports</a>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li class="">
+        <a href="/conclusion/">
+            <span>Conclusion</span>
+        </a>
+    </li>
+    
+    
+    
+    <li class="">
+        <a href="/ref/">
+            <span>References</span>
+        </a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+</nav>
+
+<hr></aside>
+
+    <main>
+        <div class="page-content" aria-label="Content">
+
+<section id="main" aria-role="main">
+    <h1 id="title">Medal Efficiency</h1>
+    <article id="content">
+        <p>As planned, first of all, we did data manipulation before plotting. Golds were given 4 points, Silver 2, and Bronze 1. Attendance without any medals was assigned to 0 point. A country’s “medal efficiency” was calculated as the quotient of total medal points and the total number of athletes participating over 120 years. Therefore, if a country / region has a medal efficiency of 0.5, it means that on average, each athlete of that country / region earned half a Bronze.</p>
+<p>We then plotted a choropleth map using orthographic projection. We applied Viridis color map where darker shades denote higher medal efficiency. To ensure interactivity, we made this map with the Plotly package. See Figure 33.</p>
+<figure class="wide">
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/g-3-1.png"
+         alt="Figure 33: Interactive choropleth for medal efficiency"/> <figcaption>
+            <p>Figure 33: Interactive choropleth for medal efficiency</p>
+        </figcaption>
+</figure>
+
+<p>We found this index both more accurate and intuitive. The reasons why it is more accurate have been outlined above. We believe that it is also more intuitive because, for example, for countries that still exist today, the highest medal efficiency is 0.91 for the United States of America. The fact that the highest is close to one makes it easier to compare between countries.</p>
+
+    </article>
+</section>
+<section id="paging">
+    <div>
+        
+        <a class="previous" href="/plot/02-plot-homefiled/">⟵ Previous: Home-field Advantage</a>
+        
+    </div>
+    <div>
+        
+        <a class="next" href="/plot/04-plot-ranking/">Next: Ranking Sports ⟶</a>
+        
+    </div>
+</section>
+
+<section id="meta">
+    
+</section>
+
+        </div><footer>
+<a href="https://github.com/opengitdocs/hugo">OpenGitDocs on GitHub</a>
+</footer></main>
+    </div>
+</body>
+
+</html>
