@@ -1,4 +1,4 @@
-baseURL: https://opengitdocs.com/
+baseURL: https://hugo-opengitdocs.netlify.app/
 languageCode: en-us
 title: 120 Years of the Olympics
 theme: opengitdocs
@@ -15,7 +15,7 @@ params:
   colorTheme: "light" # "light" or "dark"
   mainColor: "" # Hex color for the sidebar, i.e. "#016087"
   sideBarExpanded: true # Show all subsections in sidebar on desktop screens
-  footerText: "[OpenGitDocs on GitHub](https://github.com/opengitdocs/hugo)" # Shown at the bottom of pages
+  footerText: "[GitHub Repo](https://github.com/hongtaoh/onlinebook-hugo-gitopendocs)" # Shown at the bottom of pages
 
 markup: # See https://gohugo.io/getting-started/configuration-markup for more
   highlight:

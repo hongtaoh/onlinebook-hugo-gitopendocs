@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Visualization Plans on 120 Years of the Olympics</title>
-    <link>https://opengitdocs.com/plans/</link>
+    <link>https://hugo-opengitdocs.netlify.app/plans/</link>
     <description>Recent content in Visualization Plans on 120 Years of the Olympics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://opengitdocs.com/plans/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hugo-opengitdocs.netlify.app/plans/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Plans: Female Participation</title>
-      <link>https://opengitdocs.com/plans/01-plan-female/</link>
+      <link>https://hugo-opengitdocs.netlify.app/plans/01-plan-female/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opengitdocs.com/plans/01-plan-female/</guid>
+      <guid>https://hugo-opengitdocs.netlify.app/plans/01-plan-female/</guid>
       <description>As discussed above, we will use a line graph, stacked bar chart, and area chart to show the overall trend of female participation in the Summer Olympics. For female participation in each individual continent, we will use KDE in a small multiple.
 In a line graph, the x-axis will be time and the y-axis the percentage against the total number of participants. We will show both female and male athletes. See Figure 12.</description>
     </item>
     
     <item>
       <title>Plans: Home-field Advantage</title>
-      <link>https://opengitdocs.com/plans/02-plan-homefiled/</link>
+      <link>https://hugo-opengitdocs.netlify.app/plans/02-plan-homefiled/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opengitdocs.com/plans/02-plan-homefiled/</guid>
+      <guid>https://hugo-opengitdocs.netlify.app/plans/02-plan-homefiled/</guid>
       <description>To examine whether there exists a home-field advantage at the Olympics, we will first use a scatter plot with jitter. The x-axis will be countries that have ever been a host, and the y-axis will be the percentage against the total number of medals a country earned. Each dot represents an Olympic Games the country has participated in. Black dots denote data for a “non-host” year and orange dots denote data for host year.</description>
     </item>
     
     <item>
       <title>Plans: Medal Efficiency</title>
-      <link>https://opengitdocs.com/plans/03-plan-efficiency/</link>
+      <link>https://hugo-opengitdocs.netlify.app/plans/03-plan-efficiency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opengitdocs.com/plans/03-plan-efficiency/</guid>
+      <guid>https://hugo-opengitdocs.netlify.app/plans/03-plan-efficiency/</guid>
       <description>The index of “medal efficiency” will be calculated as medal points per athlete participating. We will use an interactive choropleth world map to show each participating country and region’s score. See Figure 18.
   Figure 18: Choropleth map for medal efficiency
   </description>
@@ -42,10 +42,10 @@ In a line graph, the x-axis will be time and the y-axis the percentage against t
     
     <item>
       <title>Plans: Ranking Sports</title>
-      <link>https://opengitdocs.com/plans/04-plan-ranking/</link>
+      <link>https://hugo-opengitdocs.netlify.app/plans/04-plan-ranking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opengitdocs.com/plans/04-plan-ranking/</guid>
+      <guid>https://hugo-opengitdocs.netlify.app/plans/04-plan-ranking/</guid>
       <description>First, we will use a bar chart where the x-axis will be the different sports and the y-axis the corresponding number of athletes. See Figure 19.
 Second, we will show this ranking using a word cloud in which larger font size denotes a higher number of participants. This graph will be clearer and more direct because viewers can intuitively get a sense of the relative size of participation of a sport.</description>
     </item>
