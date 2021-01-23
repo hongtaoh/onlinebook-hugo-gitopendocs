@@ -1,6 +1,6 @@
 baseURL: https://hugo-opengitdocs.netlify.app/
 languageCode: en-us
-title: 120 Years of the Olympics
+title: 120 Years of Summer Olympics
 theme: opengitdocs
 enableGitInfo: # true # Show last modified date on pages
 sectionPagesMenu: main
